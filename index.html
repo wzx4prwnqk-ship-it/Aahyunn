@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECO SPHERE | 지구를 살리는 혁신</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(circle at center,#021d1f,#000);color:white;overflow-x:hidden;height:100%;}
+header{position:fixed;width:100%;top:0;left:0;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,0.3);backdrop-filter:blur(10px);z-index:10;}
+header h1{color:#00ffa3;font-size:26px;font-weight:800;letter-spacing:2px;}
+nav a{color:#fff;margin-left:30px;text-decoration:none;font-weight:600;transition:0.3s;}
+nav a:hover{color:#00ffa3;}
+canvas{position:fixed;top:0;left:0;z-index:-1;}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 20px;backdrop-filter:blur(3px);}
+#home h2{font-size:60px;font-weight:800;animation:glow 2s ease-in-out infinite alternate;}
+@keyframes glow{from{text-shadow:0 0 10px #00ffa3,0 0 20px #00ffa3;}to{text-shadow:0 0 30px #00ffa3,0 0 60px #00ffa3;}}
+#home p{margin-top:20px;font-size:22px;color:#b8ffea;}
+#product{background:rgba(255,255,255,0.05);}
+#product h2{font-size:46px;color:#00ffa3;margin-bottom:20px;}
+.card{background:rgba(255,255,255,0.08);padding:40px;border-radius:15px;max-width:700px;box-shadow:0 0 30px rgba(0,255,163,0.3);}
+.card img{width:100%;border-radius:10px;margin-bottom:20px;}
+#join{background:rgba(0,255,163,0.05);}
+form{display:flex;flex-direction:column;width:350px;gap:15px;background:rgba(255,255,255,0.1);padding:40px;border-radius:15px;box-shadow:0 0 20px rgba(0,255,163,0.3);}
+input,textarea,button{border:none;outline:none;padding:12px;border-radius:10px;font-size:16px;}
+input,textarea{background:rgba(255,255,255,0.2);color:white;}
+button{background:#00ffa3;color:#000;font-weight:700;cursor:pointer;transition:0.3s;}
+button:hover{background:#00c97b;}
+footer{text-align:center;padding:30px;background:rgba(0,0,0,0.3);font-size:14px;}
+@media(max-width:768px){#home h2{font-size:38px;}#product h2{font-size:36px;}}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="https://suno.com/s/2Y3OWDmLtPonHSRs" type="audio/mp3">
+</audio>
+
+<header>
+  <h1>ECO SPHERE</h1>
+  <nav>
+    <a href="#home">홈</a>
+    <a href="#product">제품</a>
+    <a href="#join">참여</a>
+  </nav>
+</header>
+
+<canvas id="bg"></canvas>
+
+<section id="home">
+  <h2>지구의 숨을 되찾다</h2>
+  <p>혁신적인 환경 기술, ECO SPHERE와 함께 미래를 구하자.</p>
+</section>
+
+<section id="product">
+  <h2>🌿 ECO SPHERE</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1000&q=80" alt="eco product">
+    <p>
+      ECO SPHERE는 공기 정화, 수질 개선, 에너지 절감의 세 가지 혁신을 결합한 친환경 장치입니다.  
+      지구의 숨결을 회복시키고, 재생 가능한 자원을 활용하여 지속 가능한 미래를 만듭니다.  
+      모든 부품은 재활용 가능한 생분해성 소재로 제작되었습니다.
+    </p>
+    <p>
+      🌬️ <b>공기 정화 기능</b> — 초미세 필터와 미생물 기반 활성탄층을 통해 오염된 공기를 정화합니다.  
+      실내외 어디서나 설치 가능하며, 전기를 거의 사용하지 않습니다.
+    </p>
+    <p>
+      💧 <b>수질 개선 시스템</b> — 내장된 나노 생물막이 물속의 중금속과 미세플라스틱을 분해하고,  
+      깨끗한 물로 되돌려줍니다. 가정용 정수기나 하천 정화용으로도 응용할 수 있습니다.
+    </p>
+    <p>
+      🔋 <b>에너지 절감 모듈</b> — 태양광을 흡수해 자체적으로 전력을 공급하며,  
+      잉여 전력은 주변 조명이나 소형 기기에 사용할 수 있습니다.  
+      낮에는 에너지를 저장하고, 밤에는 은은한 생태 조명을 제공합니다.
+    </p>
+    <p>
+      🧠 <b>스마트 자동 제어</b> — AI 센서가 주변 환경 데이터를 분석하여  
+      오염이 심한 구역에 자동으로 공기 정화량을 조정합니다.  
+      스마트폰 앱과 연동해 실시간 상태를 확인하고 제어할 수도 있습니다.
+    </p>
+    <p>
+      ♻️ <b>지속 가능한 제작 방식</b> — 플라스틱 대신 생분해성 폴리머와  
+      재활용 알루미늄으로 만들어져, 제작부터 폐기까지 탄소 배출을 최소화합니다.
+    </p>
+  </div>
+</section>
+
+<section id="join">
+  <h2>🌏 체험 신청하기</h2>
+  <form id="joinForm">
+    <input type="text" id="name" placeholder="이름" required>
+    <input type="email" id="email" placeholder="이메일" required>
+    <textarea id="message" placeholder="하고 싶은 말" rows="4"></textarea>
+    <button type="submit">신청하기</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 ECO SPHERE. All Rights Reserved.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const canvas=document.querySelector('#bg');
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(75,innerWidth/innerHeight,0.1,1000);
+const renderer=new THREE.WebGLRenderer({canvas,alpha:true});
+renderer.setSize(innerWidth,innerHeight);
+camera.position.z=3;
+
+// 3D 지구 텍스처
+const textureLoader=new THREE.TextureLoader();
+const earthTexture=textureLoader.load('https://raw.githubusercontent.com/itsron717/threejs-earth/master/img/earthmap1k.jpg');
+const normalTexture=textureLoader.load('https://raw.githubusercontent.com/itsron717/threejs-earth/master/img/earthnormal1k.jpg');
+const sphere=new THREE.Mesh(
+  new THREE.SphereGeometry(1,64,64),
+  new THREE.MeshStandardMaterial({map:earthTexture,normalMap:normalTexture})
+);
+scene.add(sphere);
+
+// 조명
+const ambient=new THREE.AmbientLight(0x404040);
+scene.add(ambient);
+const pointLight=new THREE.PointLight(0x00ffa3,2,50);
+pointLight.position.set(5,3,5);
+scene.add(pointLight);
+
+// 입자(별)
+const starsGeometry=new THREE.BufferGeometry();
+const starsCount=1500;
+const positions=new Float32Array(starsCount*3);
+for(let i=0;i<starsCount*3;i++) positions[i]=(Math.random()-0.5)*10;
+starsGeometry.setAttribute('position',new THREE.BufferAttribute(positions,3));
+const starsMaterial=new THREE.PointsMaterial({color:0x00ffa3,size:0.01});
+const stars=new THREE.Points(starsGeometry,starsMaterial);
+scene.add(stars);
+
+// 애니메이션
+function animate(){
+  requestAnimationFrame(animate);
+  sphere.rotation.y+=0.002;
+  stars.rotation.y+=0.0005;
+  renderer.render(scene,camera);
+}
+animate();
+
+window.addEventListener('resize',()=>{
+  camera.aspect=innerWidth/innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth,innerHeight);
+});
+
+// 폼 제출
+document.getElementById('joinForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  alert(`감사합니다, ${name}님! 🌱\nECO SPHERE 체험 신청이 완료되었습니다.`);
+  this.reset();
+});
+</script>
+</body>
+</html>
